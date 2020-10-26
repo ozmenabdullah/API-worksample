@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Värd: 127.0.0.1:3306
--- Tid vid skapande: 26 okt 2020 kl 08:26
+-- Tid vid skapande: 26 okt 2020 kl 09:17
 -- Serverversion: 5.7.26
 -- PHP-version: 7.2.18
 
@@ -231,7 +231,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`ID`, `username`, `password`, `display_name`) VALUES
-(1, 'oddhill', '$6$rounds=10000$dGZrMTFhb214cHQ4$d9xyOht5gS949FYgUCz...aUlNYn2dFu07omMTvl1FA.gd/514YRxA2e0j8f6ENJ0V9tJTyb4AvpStZzIKPJ50', 'Abdullan Özmen');
+(1, 'oddhill', '$6$rounds=10000$dGZrMTFhb214cHQ4$KnvuLO5QdEA0eDaIHW.7VhoWrfn9QT3aTyCU8nVZ1.uRPxfW2njusFZDx3iLyWtWjSOPGuHTD2FFq3q.u4kCh.', 'Abdullan Özmen');
 
 --
 -- Restriktioner för dumpade tabeller

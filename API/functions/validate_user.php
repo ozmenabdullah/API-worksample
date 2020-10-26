@@ -1,5 +1,5 @@
 <?php
-	require_once $_SERVER['DOCUMENT_ROOT']."/ebuddy/application/models/db.class.php";
+	require_once $_SERVER['DOCUMENT_ROOT']."/api/application/models/db.class.php";
 	$db = new DB();
 	
 	// Estabilsh connection.
@@ -12,11 +12,10 @@
 	$salt = "tfk11aomxpt8ercqsy52ld3x";
 	$salt = '$6$rounds=10000$'.strtr(base64_encode($salt), array('_' => '.', '~' => '/'));
 	$password_hash = crypt($password, $salt);
-		
 	$query = "SELECT * FROM user WHERE username = '".$username."'";
 	$result = mysqli_query($conn,$query) or die (mysqli_error($conn));
 	$data = mysqli_fetch_assoc($result);
-		
+	
 	// If record found.
 	if(crypt($password,$password_hash) == $data['password']){
 		session_start();

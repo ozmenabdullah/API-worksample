@@ -109,7 +109,7 @@
 				echo '		
 				<li>
 					<button id="logout" class="nav_btn">
-						<img style="vertical-align:middle;" src="img/loading.svg" width="40px"/>
+						<img style="vertical-align:middle;" src="img/signout.svg" width="40px"/>
 						<span style="display:inline-block; padding: 10px 5px;">LOG OUT</span>
 					</button>
 				</li>';
@@ -338,10 +338,10 @@
 			if(isset($list) && isset($id) && isset($show)){
 				switch($show){
 					case "books":
-						if($list == "authors"){$this->getBookAuthors($id);}
+						if($list == "authors"){$this->getAuthorBooks($id);}
 						break;
 					case "authors":
-						if($list == "books"){$this->getAuthorBooks($id);}
+						if($list == "books"){$this->getBookAuthors($id);}
 						break;
 					case "genres":
 						if($list == "books"){$this->getBookGenres($id);}
