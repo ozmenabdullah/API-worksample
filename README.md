@@ -3,7 +3,7 @@
 Datasource created using mysql located in API folder as is named api.sql.
 
 Login to admin interface using credentials:
-username: oddhill
+username: apisample
 password: apisample
 
 Create, edit, delete not enabled.
